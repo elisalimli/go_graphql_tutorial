@@ -1,0 +1,2 @@
+- [ ] https://www.youtube.com/watch?v=RroLKn54FzE&t=225s&ab_channel=devtopics
+- [ ] https://regexlearn.com/learn/regex101

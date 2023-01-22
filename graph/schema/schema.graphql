@@ -1,0 +1,10 @@
+input NewMeetupInput {
+  userId: String!
+  name: String!
+  description: String!
+}
+
+type Mutation {
+  createMeetup(input: NewMeetupInput!): Meetup!
+}
+
