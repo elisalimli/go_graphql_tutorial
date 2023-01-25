@@ -1,0 +1,16 @@
+type Todo @goModel(model: "github.com/elisalimli/meetmeup/models.Todo") {
+    id: Int!
+    name: String!
+
+    isComplete: Boolean!
+    isDeleted: Boolean!
+
+    createdAt: Time!
+    updatedAt: Time!
+
+}
+
+input TodoInput @goModel(model: "github.com/elisalimli/meetmeup/models.TodoInput") {
+    name: String!
+    createdBy: Int!
+}
