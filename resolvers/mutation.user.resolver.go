@@ -6,12 +6,21 @@ package resolvers
 
 import (
 	"context"
-	"fmt"
 
+	"github.com/elisalimli/meetmeup/common"
 	"github.com/elisalimli/meetmeup/models"
 )
 
 // UserCreate is the resolver for the userCreate field.
 func (r *mutationResolver) UserCreate(ctx context.Context, user models.UserInput) (*models.User, error) {
-	panic(fmt.Errorf("not implemented: UserCreate - userCreate"))
+
+	context := common.GetContext(ctx)
+	usr := models.User{
+		Email:     user.Email,
+		FirstName: user.FirstName,
+		LastName:  user.LastName,
+	}
+
+	context.Database.Create(&usr)
+	return &usr, nil
 }

@@ -3,7 +3,7 @@ package models
 import "time"
 
 type Todo struct {
-	ID         int    `json:",pk,unique,notnull"`
+	ID         int    `gorm:"primaryKey"`
 	Name       string `json:"name"`
 	IsComplete bool   `json:"isComplete"`
 	IsDeleted  bool   `json:"isDeleted"`

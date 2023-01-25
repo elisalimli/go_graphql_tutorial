@@ -3,8 +3,8 @@ package models
 import "time"
 
 type User struct {
-	ID    int    `json:"id" pg:",pk,unique,notnull"`
-	Email string `json:"email" pg:",unique,notnull"`
+	ID    int    `gorm:"primaryKey"`
+	Email string `gorm:"unique;not null"`
 
 	FirstName string `json:"firstName"`
 	LastName  string `json:"lastName"`
