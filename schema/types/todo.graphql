@@ -11,6 +11,11 @@ type Todo @goModel(model: "github.com/elisalimli/meetmeup/models.Todo") {
 }
 
 input TodoInput @goModel(model: "github.com/elisalimli/meetmeup/models.TodoInput") {
-    name: String!
-    createdBy: Int!
+    name: String! 
+}
+
+
+type FieldError{
+    path: String!
+    message:String!
 }

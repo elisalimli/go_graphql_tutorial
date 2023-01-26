@@ -15,3 +15,5 @@ directive @goTag(
 	value: String
 ) on INPUT_FIELD_DEFINITION | FIELD_DEFINITION
 
+
+directive @binding(constraint: String!) on INPUT_FIELD_DEFINITION | ARGUMENT_DEFINITION

@@ -3,7 +3,7 @@ package models
 import "time"
 
 type Todo struct {
-	ID         int    `gorm:"primaryKey"`
+	ID         int    `json:"id" gorm:"primaryKey"`
 	Name       string `json:"name"`
 	IsComplete bool   `json:"isComplete"`
 	IsDeleted  bool   `json:"isDeleted"`
@@ -13,6 +13,6 @@ type Todo struct {
 }
 
 type TodoInput struct {
-	Name      string `json:"name"`
+	Name      string `json:"name" validate:"max=20"`
 	CreatedBy int    `json:"user"`
 }

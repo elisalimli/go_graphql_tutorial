@@ -1,5 +1,9 @@
+type ResponseTodoCreate{
+  errors: [FieldError]
+  todo:Todo
+}
 type Mutation {
-  todoCreate(todo: TodoInput!): Todo!
+  todoCreate(todo: TodoInput!): ResponseTodoCreate!
   todoComplete(id: Int!, updatedBy: Int!): Todo!
   todoDelete(id: Int!, updatedBy: Int!): Todo!
 }

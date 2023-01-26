@@ -36,8 +36,8 @@ func main() {
 	if port == "" {
 		port = defaultPort
 	}
-
-	srv := handler.NewDefaultServer(generated.NewExecutableSchema(generated.Config{Resolvers: &resolvers.Resolver{}}))
+	config := generated.Config{Resolvers: &resolvers.Resolver{}}
+	srv := handler.NewDefaultServer(generated.NewExecutableSchema(config))
 
 	customCtx := &common.CustomContext{
 		Database: db,
