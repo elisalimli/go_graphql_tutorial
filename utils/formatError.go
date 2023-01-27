@@ -9,14 +9,14 @@ import (
 )
 
 func MsgForTag(fe validator.FieldError) string {
-	fmt.Println("yayaya", fe.Tag(), fe.Value())
+	fieldName := fe.StructField()
 	switch fe.Tag() {
 	case "required":
-		return "This field is required"
+		return fmt.Sprintf("%v is required", fieldName)
 	case "email":
 		return "Invalid email"
 	case "max":
-		return "Too long"
+		return fmt.Sprintf("%v must be less than %v characters", fieldName, fe.Param())
 	}
 	return fe.Error() // default error
 }

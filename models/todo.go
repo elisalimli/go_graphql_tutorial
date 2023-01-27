@@ -13,6 +13,6 @@ type Todo struct {
 }
 
 type TodoInput struct {
-	Name      string `json:"name" validate:"max=20"`
+	Name      string `json:"name" validate:"required,max=20"`
 	CreatedBy int    `json:"user"`
 }
