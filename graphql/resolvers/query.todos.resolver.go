@@ -9,7 +9,7 @@ import (
 	"fmt"
 
 	"github.com/elisalimli/meetmeup/common"
-	"github.com/elisalimli/meetmeup/models"
+	"github.com/elisalimli/meetmeup/graphql/models"
 )
 
 // Todo is the resolver for the todo field.

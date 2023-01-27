@@ -6,19 +6,19 @@ schema:
   - "schema/**/*.graphql"
 
 exec:
-  filename: graph/generated/generated.go
+  filename: graphql/generated/generated.go
   package: generated
 
 # Where should the resolver implementations go?
 resolver:
   layout: follow-schema
   package: resolvers
-  dir: resolvers
+  dir: graphql/resolvers
   filename_template: "{name}.resolver.go"
 
 # Where should any generated models go?
 model:
-  filename: models/models.go
+  filename: graphql/models/models.go
   package: models
 
 # Optional, set to true if you prefer []Thing over []*Thing

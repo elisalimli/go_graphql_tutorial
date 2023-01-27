@@ -9,8 +9,8 @@ import (
 	"fmt"
 
 	"github.com/elisalimli/meetmeup/common"
-	"github.com/elisalimli/meetmeup/graph/generated"
-	"github.com/elisalimli/meetmeup/models"
+	"github.com/elisalimli/meetmeup/graphql/generated"
+	"github.com/elisalimli/meetmeup/graphql/models"
 	"github.com/elisalimli/meetmeup/utils"
 	validator "github.com/go-playground/validator/v10"
 )
@@ -53,5 +53,4 @@ type mutationResolver struct{ *Resolver }
 //   - When renaming or deleting a resolver the old code will be put in here. You can safely delete
 //     it when you're done.
 //   - You have helper methods in this file. Move them out to keep these resolver files clean.
-
 var validate *validator.Validate

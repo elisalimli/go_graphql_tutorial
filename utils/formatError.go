@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/elisalimli/meetmeup/models"
+	"github.com/elisalimli/meetmeup/graphql/models"
 	"github.com/go-playground/validator/v10"
 )
 

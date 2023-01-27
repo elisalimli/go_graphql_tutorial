@@ -1,4 +1,4 @@
-type Todo @goModel(model: "github.com/elisalimli/meetmeup/models.Todo") {
+type Todo @goModel(model: "github.com/elisalimli/meetmeup/graphql/models.Todo") {
     id: Int!
     name: String!
 
@@ -10,7 +10,7 @@ type Todo @goModel(model: "github.com/elisalimli/meetmeup/models.Todo") {
 
 }
 
-input TodoInput @goModel(model: "github.com/elisalimli/meetmeup/models.TodoInput") {
+input TodoInput @goModel(model: "github.com/elisalimli/meetmeup/graphql/models.TodoInput") {
     name: String! 
 }
 

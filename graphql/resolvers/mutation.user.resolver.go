@@ -8,7 +8,7 @@ import (
 	"context"
 
 	"github.com/elisalimli/meetmeup/common"
-	"github.com/elisalimli/meetmeup/models"
+	"github.com/elisalimli/meetmeup/graphql/models"
 )
 
 // UserCreate is the resolver for the userCreate field.

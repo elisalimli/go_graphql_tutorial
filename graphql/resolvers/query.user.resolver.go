@@ -8,8 +8,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/elisalimli/meetmeup/graph/generated"
-	"github.com/elisalimli/meetmeup/models"
+	generated1 "github.com/elisalimli/meetmeup/graphql/generated"
+	"github.com/elisalimli/meetmeup/graphql/models"
 )
 
 // User is the resolver for the user field.
@@ -22,7 +22,7 @@ func (r *queryResolver) Users(ctx context.Context, limit *int, offset *int) ([]m
 	panic(fmt.Errorf("not implemented: Users - users"))
 }
 
-// Query returns generated.QueryResolver implementation.
-func (r *Resolver) Query() generated.QueryResolver { return &queryResolver{r} }
+// Query returns generated1.QueryResolver implementation.
+func (r *Resolver) Query() generated1.QueryResolver { return &queryResolver{r} }
 
 type queryResolver struct{ *Resolver }

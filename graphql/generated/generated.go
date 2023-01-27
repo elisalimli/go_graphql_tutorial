@@ -553,7 +553,7 @@ func (ec *executionContext) field_Mutation_todoCreate_args(ctx context.Context, 
 	var arg0 models.TodoInput
 	if tmp, ok := rawArgs["todo"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("todo"))
-		arg0, err = ec.unmarshalNTodoInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodoInput(ctx, tmp)
+		arg0, err = ec.unmarshalNTodoInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodoInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -592,7 +592,7 @@ func (ec *executionContext) field_Mutation_userCreate_args(ctx context.Context, 
 	var arg0 models.UserInput
 	if tmp, ok := rawArgs["user"]; ok {
 		ctx := graphql.WithPathContext(ctx, graphql.NewPathWithField("user"))
-		arg0, err = ec.unmarshalNUserInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUserInput(ctx, tmp)
+		arg0, err = ec.unmarshalNUserInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUserInput(ctx, tmp)
 		if err != nil {
 			return nil, err
 		}
@@ -847,7 +847,7 @@ func (ec *executionContext) _Mutation_todoCreate(ctx context.Context, field grap
 	}
 	res := resTmp.(*models.ResponseTodoCreate)
 	fc.Result = res
-	return ec.marshalNResponseTodoCreate2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐResponseTodoCreate(ctx, field.Selections, res)
+	return ec.marshalNResponseTodoCreate2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐResponseTodoCreate(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_todoCreate(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -907,7 +907,7 @@ func (ec *executionContext) _Mutation_todoComplete(ctx context.Context, field gr
 	}
 	res := resTmp.(*models.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_todoComplete(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -975,7 +975,7 @@ func (ec *executionContext) _Mutation_todoDelete(ctx context.Context, field grap
 	}
 	res := resTmp.(*models.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_todoDelete(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1043,7 +1043,7 @@ func (ec *executionContext) _Mutation_userCreate(ctx context.Context, field grap
 	}
 	res := resTmp.(*models.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Mutation_userCreate(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1108,7 +1108,7 @@ func (ec *executionContext) _Query_user(ctx context.Context, field graphql.Colle
 	}
 	res := resTmp.(*models.User)
 	fc.Result = res
-	return ec.marshalOUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx, field.Selections, res)
+	return ec.marshalOUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_user(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1176,7 +1176,7 @@ func (ec *executionContext) _Query_users(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]models.User)
 	fc.Result = res
-	return ec.marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUserᚄ(ctx, field.Selections, res)
+	return ec.marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUserᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_users(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1241,7 +1241,7 @@ func (ec *executionContext) _Query_todo(ctx context.Context, field graphql.Colle
 	}
 	res := resTmp.(*models.Todo)
 	fc.Result = res
-	return ec.marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx, field.Selections, res)
+	return ec.marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_todo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1309,7 +1309,7 @@ func (ec *executionContext) _Query_todos(ctx context.Context, field graphql.Coll
 	}
 	res := resTmp.([]models.Todo)
 	fc.Result = res
-	return ec.marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodoᚄ(ctx, field.Selections, res)
+	return ec.marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodoᚄ(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_Query_todos(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1502,7 +1502,7 @@ func (ec *executionContext) _ResponseTodoCreate_errors(ctx context.Context, fiel
 	}
 	res := resTmp.([]*models.FieldError)
 	fc.Result = res
-	return ec.marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐFieldError(ctx, field.Selections, res)
+	return ec.marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐFieldError(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ResponseTodoCreate_errors(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -1549,7 +1549,7 @@ func (ec *executionContext) _ResponseTodoCreate_todo(ctx context.Context, field 
 	}
 	res := resTmp.(*models.Todo)
 	fc.Result = res
-	return ec.marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx, field.Selections, res)
+	return ec.marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx, field.Selections, res)
 }
 
 func (ec *executionContext) fieldContext_ResponseTodoCreate_todo(ctx context.Context, field graphql.CollectedField) (fc *graphql.FieldContext, err error) {
@@ -4666,11 +4666,11 @@ func (ec *executionContext) marshalNInt2int(ctx context.Context, sel ast.Selecti
 	return res
 }
 
-func (ec *executionContext) marshalNResponseTodoCreate2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐResponseTodoCreate(ctx context.Context, sel ast.SelectionSet, v models.ResponseTodoCreate) graphql.Marshaler {
+func (ec *executionContext) marshalNResponseTodoCreate2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐResponseTodoCreate(ctx context.Context, sel ast.SelectionSet, v models.ResponseTodoCreate) graphql.Marshaler {
 	return ec._ResponseTodoCreate(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNResponseTodoCreate2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐResponseTodoCreate(ctx context.Context, sel ast.SelectionSet, v *models.ResponseTodoCreate) graphql.Marshaler {
+func (ec *executionContext) marshalNResponseTodoCreate2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐResponseTodoCreate(ctx context.Context, sel ast.SelectionSet, v *models.ResponseTodoCreate) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4710,11 +4710,11 @@ func (ec *executionContext) marshalNTime2timeᚐTime(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) marshalNTodo2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v models.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v models.Todo) graphql.Marshaler {
 	return ec._Todo(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []models.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodoᚄ(ctx context.Context, sel ast.SelectionSet, v []models.Todo) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -4738,7 +4738,7 @@ func (ec *executionContext) marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeup
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNTodo2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx, sel, v[i])
+			ret[i] = ec.marshalNTodo2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4758,7 +4758,7 @@ func (ec *executionContext) marshalNTodo2ᚕgithubᚗcomᚋelisalimliᚋmeetmeup
 	return ret
 }
 
-func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v *models.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v *models.Todo) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4768,16 +4768,16 @@ func (ec *executionContext) marshalNTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeup
 	return ec._Todo(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNTodoInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodoInput(ctx context.Context, v interface{}) (models.TodoInput, error) {
+func (ec *executionContext) unmarshalNTodoInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodoInput(ctx context.Context, v interface{}) (models.TodoInput, error) {
 	res, err := ec.unmarshalInputTodoInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
 
-func (ec *executionContext) marshalNUser2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v models.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v models.User) graphql.Marshaler {
 	return ec._User(ctx, sel, &v)
 }
 
-func (ec *executionContext) marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUserᚄ(ctx context.Context, sel ast.SelectionSet, v []models.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUserᚄ(ctx context.Context, sel ast.SelectionSet, v []models.User) graphql.Marshaler {
 	ret := make(graphql.Array, len(v))
 	var wg sync.WaitGroup
 	isLen1 := len(v) == 1
@@ -4801,7 +4801,7 @@ func (ec *executionContext) marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeup
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalNUser2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx, sel, v[i])
+			ret[i] = ec.marshalNUser2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -4821,7 +4821,7 @@ func (ec *executionContext) marshalNUser2ᚕgithubᚗcomᚋelisalimliᚋmeetmeup
 	return ret
 }
 
-func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v *models.User) graphql.Marshaler {
+func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v *models.User) graphql.Marshaler {
 	if v == nil {
 		if !graphql.HasFieldError(ctx, graphql.GetFieldContext(ctx)) {
 			ec.Errorf(ctx, "the requested element is null which the schema does not allow")
@@ -4831,7 +4831,7 @@ func (ec *executionContext) marshalNUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeup
 	return ec._User(ctx, sel, v)
 }
 
-func (ec *executionContext) unmarshalNUserInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUserInput(ctx context.Context, v interface{}) (models.UserInput, error) {
+func (ec *executionContext) unmarshalNUserInput2githubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUserInput(ctx context.Context, v interface{}) (models.UserInput, error) {
 	res, err := ec.unmarshalInputUserInput(ctx, v)
 	return res, graphql.ErrorOnPath(ctx, err)
 }
@@ -5115,7 +5115,7 @@ func (ec *executionContext) marshalOBoolean2ᚖbool(ctx context.Context, sel ast
 	return res
 }
 
-func (ec *executionContext) marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐFieldError(ctx context.Context, sel ast.SelectionSet, v []*models.FieldError) graphql.Marshaler {
+func (ec *executionContext) marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐFieldError(ctx context.Context, sel ast.SelectionSet, v []*models.FieldError) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -5142,7 +5142,7 @@ func (ec *executionContext) marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimli�
 			if !isLen1 {
 				defer wg.Done()
 			}
-			ret[i] = ec.marshalOFieldError2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐFieldError(ctx, sel, v[i])
+			ret[i] = ec.marshalOFieldError2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐFieldError(ctx, sel, v[i])
 		}
 		if isLen1 {
 			f(i)
@@ -5156,7 +5156,7 @@ func (ec *executionContext) marshalOFieldError2ᚕᚖgithubᚗcomᚋelisalimli�
 	return ret
 }
 
-func (ec *executionContext) marshalOFieldError2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐFieldError(ctx context.Context, sel ast.SelectionSet, v *models.FieldError) graphql.Marshaler {
+func (ec *executionContext) marshalOFieldError2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐFieldError(ctx context.Context, sel ast.SelectionSet, v *models.FieldError) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
@@ -5233,14 +5233,14 @@ func (ec *executionContext) marshalOString2ᚖstring(ctx context.Context, sel as
 	return res
 }
 
-func (ec *executionContext) marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v *models.Todo) graphql.Marshaler {
+func (ec *executionContext) marshalOTodo2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐTodo(ctx context.Context, sel ast.SelectionSet, v *models.Todo) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}
 	return ec._Todo(ctx, sel, v)
 }
 
-func (ec *executionContext) marshalOUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v *models.User) graphql.Marshaler {
+func (ec *executionContext) marshalOUser2ᚖgithubᚗcomᚋelisalimliᚋmeetmeupᚋgraphqlᚋmodelsᚐUser(ctx context.Context, sel ast.SelectionSet, v *models.User) graphql.Marshaler {
 	if v == nil {
 		return graphql.Null
 	}

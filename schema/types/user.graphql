@@ -1,4 +1,4 @@
-type User @goModel(model: "github.com/elisalimli/meetmeup/models.User") {
+type User @goModel(model: "github.com/elisalimli/meetmeup/graphql/models.User") {
     id: Int!
     email: String!
 
@@ -9,7 +9,7 @@ type User @goModel(model: "github.com/elisalimli/meetmeup/models.User") {
     updatedAt: Time!
 }
 
-input UserInput @goModel(model: "github.com/elisalimli/meetmeup/models.UserInput") {
+input UserInput @goModel(model: "github.com/elisalimli/meetmeup/graphql/models.UserInput") {
     email: String!
     firstName: String!
     lastName: String!

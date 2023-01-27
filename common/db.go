@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/elisalimli/meetmeup/models"
+	"github.com/elisalimli/meetmeup/graphql/models"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

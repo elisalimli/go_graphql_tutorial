@@ -9,8 +9,8 @@ import (
 	"github.com/99designs/gqlgen/graphql/playground"
 
 	"github.com/elisalimli/meetmeup/common"
-	"github.com/elisalimli/meetmeup/graph/generated"
-	"github.com/elisalimli/meetmeup/resolvers"
+	"github.com/elisalimli/meetmeup/graphql/generated"
+	"github.com/elisalimli/meetmeup/graphql/resolvers"
 	"github.com/joho/godotenv"
 )
 
