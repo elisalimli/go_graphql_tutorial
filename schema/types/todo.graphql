@@ -1,9 +1,11 @@
 type Todo @goModel(model: "github.com/elisalimli/meetmeup/graphql/models.Todo") {
-    id: Int!
+    id: ID!
     name: String!
 
     isComplete: Boolean!
     isDeleted: Boolean!
+
+
 
     createdAt: Time!
     updatedAt: Time!

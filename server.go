@@ -11,6 +11,7 @@ import (
 	"github.com/elisalimli/meetmeup/common"
 	"github.com/elisalimli/meetmeup/graphql/generated"
 	"github.com/elisalimli/meetmeup/graphql/resolvers"
+
 	"github.com/joho/godotenv"
 )
 
